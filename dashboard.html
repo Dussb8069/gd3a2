@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Border</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the background color and full viewport size */
+        body, html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff; /* Adjust background color as needed */
+        }
+
+        /* Style the image with border */
+        .image-container {
+            border: 10px solid rgb(255, 255, 255); /* Adjust border color and size */
+            padding: 5px; /* Optional padding inside the border */
+        }
+
+        .image-container img {
+            display: block;
+            max-width: 100vw; /* Make sure the image is responsive */
+            max-height: 95vh;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="final-1.png" alt="Centered Image with Border">
+    </div>
+</body>
+</html>
